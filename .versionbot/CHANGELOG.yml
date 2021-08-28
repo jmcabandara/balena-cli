@@ -1,4 +1,84 @@
 - commits:
+    - subject: 'os download: Allow more lenient gzip decompression'
+      hash: f036b9917ecf8e5bc148c3dd923ef774f7932fb6
+      body: |
+        Update balena-sdk from 15.48.0 to 15.48.3
+      footer:
+        Changelog-entry: 'os download: Allow more lenient gzip decompression'
+        changelog-entry: 'os download: Allow more lenient gzip decompression'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested:
+        - commits:
+            - subject: Update balena-request to 11.4.1
+              hash: de5c18f7b55d25a23ae3b78fda8ea0ee4494e4ad
+              body: |
+                Update balena-request from 11.4.0 to 11.4.1
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested:
+                - commits:
+                    - subject: Allow more lenient gzip decompression
+                      hash: 9c7bc3051b279c9d09ec501a78dbe9f506d65650
+                      body: >
+                        Be more lenient with decoding compressed responses,
+                        since (very rarely)
+
+                        servers send slightly invalid gzip responses that are
+                        still accepted
+
+                        by common browsers.
+
+
+                        Always using Z_SYNC_FLUSH is what cURL does.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                  version: balena-request-11.4.1
+                  date: 2021-08-27T19:10:59.811Z
+          version: balena-sdk-15.48.3
+          date: 2021-08-27T19:53:51.776Z
+        - commits:
+            - subject: >-
+                Improve hostapp.getAllOsVersions performance & reduce fetched
+                data
+              hash: 61307d83ebaa03d69197b5140ddcb5c50c9c4159
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+                signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+              author: Thodoris Greasidis
+              nested: []
+          version: balena-sdk-15.48.2
+          date: 2021-08-27T10:38:18.157Z
+        - commits:
+            - subject: Update typescript to 4.4.2
+              hash: 5d6e2b69633d8aca0747a64f121bd4b7e670a3c5
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+                signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+              author: Thodoris Greasidis
+              nested: []
+          version: balena-sdk-15.48.1
+          date: 2021-08-27T07:07:50.896Z
+  version: 12.48.2
+  date: 2021-08-28T20:41:23.427Z
+- commits:
     - subject: Improve error handling (remove most occurrences of process.exit())
       hash: deb3e4c4ac1b23e96b283848580428f61de4eb05
       body: |

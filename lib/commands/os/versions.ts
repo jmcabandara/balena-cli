@@ -55,11 +55,21 @@ export default class OsVersionsCmd extends Command {
 	public async run() {
 		const { args: params } = this.parse<FlagsDef, ArgsDef>(OsVersionsCmd);
 
-		const { versions: vs, recommended } =
-			await getBalenaSdk().models.os.getSupportedVersions(params.type);
+		const vs =
+			(await getBalenaSdk().models.hostapp.getAllOsVersions([params.type]))[
+				params.type
+			] ?? [];
 
-		vs.forEach((v) => {
-			console.log(`v${v}` + (v === recommended ? ' (recommended)' : ''));
-		});
+		const formatted = vs
+			.map((v) => {
+				// add a note like '(recommended)' or '(sunset)', if available
+				const i = v.formattedVersion.indexOf(' ');
+				return i < 0
+					? v.rawVersion
+					: v.rawVersion + v.formattedVersion.substring(i);
+			})
+			.join('\n');
+
+		console.log(formatted);
 	}
 }

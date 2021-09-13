@@ -188,11 +188,10 @@ async function resolveOSVersion(deviceType: string, version: string) {
 		return version;
 	}
 
-	const vs = (
+	const vs =
 		(await getBalenaSdk().models.hostapp.getAllOsVersions([deviceType]))[
 			deviceType
-		] ?? []
-	).filter((v) => v.osType === 'default');
+		] ?? [];
 
 	const choices = vs.map((v) => ({
 		value: v.rawVersion,

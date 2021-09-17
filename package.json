@@ -268,7 +268,7 @@
     "resin-cli-visuals": "^1.8.0",
     "resin-compose-parse": "^2.1.3",
     "resin-doodles": "^0.1.1",
-    "resin-multibuild": "^4.12.1",
+    "resin-multibuild": "4.12.2-logger-for-multiarch-warnings-277a26c5e7ea11c2c4bba007263f4c168232682d",
     "resin-stream-logger": "^0.1.2",
     "rimraf": "^3.0.2",
     "semver": "^7.3.2",

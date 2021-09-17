@@ -15766,9 +15766,9 @@
       }
     },
     "resin-multibuild": {
-      "version": "4.12.1",
-      "resolved": "https://registry.npmjs.org/resin-multibuild/-/resin-multibuild-4.12.1.tgz",
-      "integrity": "sha512-ORtzaDZGS5wftNo4KXi4yOcqSsjU0/56oY7mXlc8XcmqusOOfr1N3rnFpXkjQ7COJLcPvfPT+OEeJuQ7l7cOmg==",
+      "version": "4.12.2-logger-for-multiarch-warnings-277a26c5e7ea11c2c4bba007263f4c168232682d",
+      "resolved": "https://registry.npmjs.org/resin-multibuild/-/resin-multibuild-4.12.2-logger-for-multiarch-warnings-277a26c5e7ea11c2c4bba007263f4c168232682d.tgz",
+      "integrity": "sha512-jA1OuXpcuwtrVJB4gdS54r7O3htvHfUeqgjn2ZTf4tmhuJDloktAGAhyIl7iUA+gp6GV1dviV0UaXWWufsEuaA==",
       "requires": {
         "ajv": "^6.12.3",
         "bluebird": "^3.7.2",

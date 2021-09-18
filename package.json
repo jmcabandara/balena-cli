@@ -1,6 +1,6 @@
 {
   "name": "balena-cli",
-  "version": "12.48.13",
+  "version": "12.49.0",
   "description": "The official balena Command Line Interface",
   "main": "./build/app.js",
   "homepage": "https://github.com/balena-io/balena-cli",
@@ -268,7 +268,7 @@
     "resin-cli-visuals": "^1.8.0",
     "resin-compose-parse": "^2.1.3",
     "resin-doodles": "^0.1.1",
-    "resin-multibuild": "4.12.2-logger-for-multiarch-warnings-277a26c5e7ea11c2c4bba007263f4c168232682d",
+    "resin-multibuild": "4.12.2-logger-for-multiarch-warnings-42766be3d4df67319e34ffcb3cb89af1dd51a4c0",
     "resin-stream-logger": "^0.1.2",
     "rimraf": "^3.0.2",
     "semver": "^7.3.2",
@@ -290,6 +290,6 @@
     "windosu": "^0.3.0"
   },
   "versionist": {
-    "publishedAt": "2021-09-17T13:02:03.633Z"
+    "publishedAt": "2021-09-18T02:07:41.389Z"
   }
 }
